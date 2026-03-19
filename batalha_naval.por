@@ -13,6 +13,7 @@ programa
 		}
 		inteiro l, c
 		
+		
 		faca { 
 			escreva ("\nEscolha uma linha (0 á 7): ")
 			leia (l)
@@ -27,9 +28,10 @@ programa
 				municao = municao - 1
 				escreva ("Municao restante: ", municao, "\n")
 
-			se(municao==0){
+				se(municao==0){
+					escreva("Você perdeu") 
+				
 				}
-				escreva("Você perdeu") 
 				
 			}
 			senao 
@@ -41,7 +43,7 @@ programa
 				pare
 			}
 
-		} enquanto (batalha_naval[0][1] != "*" ou batalha_naval[0][2]!="*")  
+		} enquanto (batalha_naval[l][c] != "*")  
 		
 	}
 }
@@ -50,7 +52,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 866; 
+ * @POSICAO-CURSOR = 659; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

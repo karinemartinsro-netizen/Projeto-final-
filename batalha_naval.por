@@ -3,20 +3,20 @@ programa
 	funcao inicio()
 	{
 	
-		inteiro municao = 5 , placar = 0 , 
-		cadeia batalha_naval[4][4] = {
-			{"A","*","A","A"},
-			{"A","A","A","A"}, 
-			{"A","A","A","A"},
-			{"A","A","A","A"}
+		inteiro municao = 10 , placar = 0
+		cadeia batalha_naval[4][8] = {
+			{"A","*","*","A","A","A","A","A"},
+			{"A","A","A","A","A","A","A","A"},
+		    	{"A","A","A","A","A","A","A","A"},
+			{"A","A","A","A","A","A","A","A"}
+		
 		}
-
 		inteiro l, c
-
+		
 		faca { 
-			escreva ("\nEscolha uma linha (0 á 3): ")
+			escreva ("\nEscolha uma linha (0 á 7): ")
 			leia (l)
-			escreva ("Escolha uma coluna (0 á 3): ")
+			escreva ("Escolha uma coluna (0 á 7): ")
 			leia (c)
 
 			
@@ -29,7 +29,7 @@ programa
 
 			se(municao==0){
 				}
-
+				escreva("Você perdeu") 
 				
 			}
 			senao 
@@ -41,7 +41,7 @@ programa
 				pare
 			}
 
-		} enquanto (batalha_naval[0][2] != "*")  
+		} enquanto (batalha_naval[0][1] != "*" ou batalha_naval[0][2]!="*")  
 		
 	}
 }
@@ -50,7 +50,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 73; 
+ * @POSICAO-CURSOR = 866; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

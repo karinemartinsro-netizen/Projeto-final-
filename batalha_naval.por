@@ -20,7 +20,7 @@ programa
 				total_barcos=4
 			pare 
 
-			caso 3: 
+			caso 3:
 			municao=5
 			total_barcos=3
 			pare	

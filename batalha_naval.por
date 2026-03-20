@@ -3,56 +3,56 @@ programa
 	funcao inicio()
 	{
 	
-		inteiro municao = 10 , placar = 0
-		cadeia batalha_naval[4][8] = {
-			{"A","*","*","A","A","A","A","A"},
-			{"A","A","A","A","A","A","A","A"},
-		    	{"A","A","A","A","A","A","A","A"},
-			{"A","A","A","A","A","A","A","A"}
-		
-		}
-		inteiro l, c
-		
-		
-		faca { 
-			escreva ("\nEscolha uma linha (0 á 7): ")
-			leia (l)
-			escreva ("Escolha uma coluna (0 á 7): ")
-			leia (c)
+		inteiro nivel, municao, total_barcos, barcos_explodidos= 0
 
+		escreva("1)Nivel I \n", "2)Nivel II\n", "3)Nivel III\n")
+		leia(nivel)
+
+		escolha(nivel){
 			
-			se (batalha_naval[l][c] == "A") 
-			{
-				escreva ("Água! Você errou a posição, tente novamente.\n")
+			caso 1:
+				municao=10
+				total_barcos= 7
+			pare
 
-				municao = municao - 1
-				escreva ("Municao restante: ", municao, "\n")
+			caso 2:
+				municao=7
+				total_barcos=4
+			pare 
 
-				se(municao==0){
-					escreva("Você perdeu") 
-				
-				}
-				
-			}
-			senao 
-			{
-				escreva ("BOOM! Você acertou o navio e ele afundou! \n")
-				
-				
-				batalha_naval[l][c] = "*" 
-				pare
-			}
-
-		} enquanto (batalha_naval[l][c] != "*")  
+			caso 3: 
+			municao=5
+			total_barcos=3
+			pare	
+		}
+	
+	
+	
+	cadeia mapa[4][9]={
+		{"A","A","A","A","A","A","A","A","A"},
+		{"A","A","A","A","A","A","A","A","A"},
+		{"A","A","A","A","A","A","A","A","A"},
+		{"A","A","A","A","A","A","A","A","A"} 
+		}
+	
+		inteiro l,c
 		
+		enquanto(barcos_explodidos<total_barcos e municao>0){
+			escreva("\nLinha (0-3): ")
+			leia(l)
+			escreva("Coluna (0-3): ")
+			leia(c)
+			}
+		}
 	}
 }
+
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 659; 
+ * @POSICAO-CURSOR = 625; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

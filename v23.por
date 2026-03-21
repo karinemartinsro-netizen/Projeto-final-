@@ -1,52 +1,44 @@
 programa
 {
-	
-	
-	
 	inclua biblioteca Util -->u
-	
 	inteiro barcos_afundados
-	inteiro total_de_barcos
-	inteiro municao
-	cadeia   mapa[5][5]
+	inteiro total_de_barcos=0
+	inteiro municao=0
+	cadeia  mapa[5][5]
 	inteiro pontuacao = 0
+
 	
 	
 	
 	funcao inicio()
 	{	
 	
-		iniciar_mapa()
+	iniciar_mapa()
+	
 	}
 
 	funcao iniciar_mapa(){
 
 		para(inteiro i = 0; i < 5; i++){
 			para(inteiro j = 0; j < 5; j++){
-				mapa[i][j] = ""
+				mapa[i][j] = "A"
 			}
 		}
 
 		para(inteiro i = 0; i < 5; i++){
 			para(inteiro j = 0; j < 5; j++){
 				escreva(mapa[i][j], " ")
+			
 			}
-			}
-barcos_aleatorios()		
+			escreva("\n")
+			
+		}
+		
 	}
-	
-	
 	funcao barcos_aleatorios(){
-		inteiro i=u.sorteia(0,4), j=u.sorteia(0,4)
-			se(mapa[i][j]!="N"){
-				mapa[i][j]="N"
-			}
-			senao{
-				barcos_aleatorios()
-			}
+		iniciar_mapa()
+		util.
 	}
-	
-	
 
 }
 /* $$$ Portugol Studio $$$ 
@@ -54,9 +46,9 @@ barcos_aleatorios()
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 590; 
+ * @POSICAO-CURSOR = 39; 
  * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = {mapa, 11, 10, 4};
+ * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
  * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
  */

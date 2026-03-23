@@ -1,6 +1,6 @@
 programa
 {
-		inteiro opcao
+		inteiro opcao
 	funcao inicio(){
 		
 		menu_principal()
@@ -64,11 +64,12 @@ programa
 		
 	}
 	funcao mostrar_regras(){
-		escreva("Regras do Jogo	\n")
-		escreva("1- adivinhe onde o barco inimigo esta	\n")
-		escreva("")
-		escreva("")
-		escreva("")	
+		escreva(" =======Regras do Jogo=======\n")
+		escreva("1- Adivinhe onde o barco inimigo esta:\n\n")
+		escreva("2- Os navios não podem se sobrepor(um em cima do outro):\n\n")
+		escreva("3- Não é permitido alterar a posição dos navios durante a partida:\n\n")
+		escreva("4- Não é permitido que navios fiquem encostados (nem pelas bordas, nem pelos cantos):\n\n")	
+		escreva("5- Não pode atirar fora do tabuleiro (ex: Z20 em um mapa 10x10):\n\n")
 	}
 }
 
@@ -78,7 +79,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 740; 
+ * @POSICAO-CURSOR = 999; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

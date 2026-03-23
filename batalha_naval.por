@@ -4,8 +4,8 @@ programa
 
 	inteiro opcao
 	inteiro barcos_afundados
-	inteiro total_de_barcos
-	inteiro municao
+	inteiro total_de_barcos = 0
+	inteiro municao = 0
 	inteiro pontuacao = 0
 	cadeia  mapa[5][5]
 
@@ -142,7 +142,7 @@ programa
 		se(mapa[linha][coluna] == "N")
 		{
 			mapa[linha][coluna] = "*"
-			pontuacao = pontuacao + 1000
+			pontuacao = pontuacao + 1
 			municao = municao - 1
 			escreva("acertou \n")
 		}

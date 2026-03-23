@@ -142,7 +142,7 @@ programa
 		se(mapa[linha][coluna] == "N")
 		{
 			mapa[linha][coluna] = "*"
-			pontuacao = pontuacao + 1
+			pontuacao = pontuacao + 1000
 			municao = municao - 1
 			escreva("acertou \n")
 		}
